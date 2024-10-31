@@ -6,5 +6,10 @@
 export {}
 
 declare module 'vue' {
-  export interface GlobalComponents {}
+  export interface GlobalComponents {
+    DictFiled: typeof import('./src/components/DictFiled.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
+    SearchFiled: typeof import('./src/components/SearchFiled.vue')['default']
+  }
 }

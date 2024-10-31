@@ -45,6 +45,7 @@ export default defineConfig(({ command, mode }) => {
     },
     server: {
       port: 4200,
+      host: '0.0.0.0',
       // proxy: {
       //   '/dev-api': {
       //     target: 'http://ss-zqztc-backend-dev.cnsaas.com',
